@@ -1,0 +1,1 @@
+/usr/bin/cc -rdynamic CMakeFiles/CLlinkedlist.out.dir/main.c.o CMakeFiles/CLlinkedlist.out.dir/CLlinkedlist.c.o -o CLlinkedlist.out 
