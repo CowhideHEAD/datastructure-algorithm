@@ -1,3 +1,3 @@
-/home/ubuntu/project/ch4/CLlinkedlist/src/CMakeFiles/CLlinkedlist.dir
+/home/ubuntu/project/ch4/CLlinkedlist/src/CMakeFiles/CLlinkedlist.out.dir
 /home/ubuntu/project/ch4/CLlinkedlist/src/CMakeFiles/edit_cache.dir
 /home/ubuntu/project/ch4/CLlinkedlist/src/CMakeFiles/rebuild_cache.dir

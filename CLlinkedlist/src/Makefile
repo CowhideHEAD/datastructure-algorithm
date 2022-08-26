@@ -120,24 +120,24 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named CLlinkedlist
+# Target rules for targets named CLlinkedlist.out
 
 # Build rule for target.
-CLlinkedlist: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CLlinkedlist
-.PHONY : CLlinkedlist
+CLlinkedlist.out: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CLlinkedlist.out
+.PHONY : CLlinkedlist.out
 
 # fast build rule for target.
-CLlinkedlist/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CLlinkedlist.dir/build.make CMakeFiles/CLlinkedlist.dir/build
-.PHONY : CLlinkedlist/fast
+CLlinkedlist.out/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CLlinkedlist.out.dir/build.make CMakeFiles/CLlinkedlist.out.dir/build
+.PHONY : CLlinkedlist.out/fast
 
 CLlinkedlist.o: CLlinkedlist.c.o
 .PHONY : CLlinkedlist.o
 
 # target to build an object file
 CLlinkedlist.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CLlinkedlist.dir/build.make CMakeFiles/CLlinkedlist.dir/CLlinkedlist.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CLlinkedlist.out.dir/build.make CMakeFiles/CLlinkedlist.out.dir/CLlinkedlist.c.o
 .PHONY : CLlinkedlist.c.o
 
 CLlinkedlist.i: CLlinkedlist.c.i
@@ -145,7 +145,7 @@ CLlinkedlist.i: CLlinkedlist.c.i
 
 # target to preprocess a source file
 CLlinkedlist.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CLlinkedlist.dir/build.make CMakeFiles/CLlinkedlist.dir/CLlinkedlist.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CLlinkedlist.out.dir/build.make CMakeFiles/CLlinkedlist.out.dir/CLlinkedlist.c.i
 .PHONY : CLlinkedlist.c.i
 
 CLlinkedlist.s: CLlinkedlist.c.s
@@ -153,7 +153,7 @@ CLlinkedlist.s: CLlinkedlist.c.s
 
 # target to generate assembly for a file
 CLlinkedlist.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CLlinkedlist.dir/build.make CMakeFiles/CLlinkedlist.dir/CLlinkedlist.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CLlinkedlist.out.dir/build.make CMakeFiles/CLlinkedlist.out.dir/CLlinkedlist.c.s
 .PHONY : CLlinkedlist.c.s
 
 main.o: main.c.o
@@ -161,7 +161,7 @@ main.o: main.c.o
 
 # target to build an object file
 main.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CLlinkedlist.dir/build.make CMakeFiles/CLlinkedlist.dir/main.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CLlinkedlist.out.dir/build.make CMakeFiles/CLlinkedlist.out.dir/main.c.o
 .PHONY : main.c.o
 
 main.i: main.c.i
@@ -169,7 +169,7 @@ main.i: main.c.i
 
 # target to preprocess a source file
 main.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CLlinkedlist.dir/build.make CMakeFiles/CLlinkedlist.dir/main.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CLlinkedlist.out.dir/build.make CMakeFiles/CLlinkedlist.out.dir/main.c.i
 .PHONY : main.c.i
 
 main.s: main.c.s
@@ -177,7 +177,7 @@ main.s: main.c.s
 
 # target to generate assembly for a file
 main.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CLlinkedlist.dir/build.make CMakeFiles/CLlinkedlist.dir/main.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CLlinkedlist.out.dir/build.make CMakeFiles/CLlinkedlist.out.dir/main.c.s
 .PHONY : main.c.s
 
 # Help Target
@@ -188,7 +188,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... CLlinkedlist"
+	@echo "... CLlinkedlist.out"
 	@echo "... CLlinkedlist.o"
 	@echo "... CLlinkedlist.i"
 	@echo "... CLlinkedlist.s"
