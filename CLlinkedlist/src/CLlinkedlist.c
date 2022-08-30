@@ -57,6 +57,25 @@ void InsertFirstNode (nodehead* CL,char *_indata){
 
 }
 
+void InsertMiddleNode(nodehead* CL,nodelist*pre ,char *_indata){
+	nodelist *newnode;
+	newnode=(nodelist*)malloc(sizeof(newnode));
+	strcpy(newnode->data,_indata);
+
+	if(CL->head==NULL){
+		CL->head=newnode;
+		newnode->link=newnode;
+	}
+
+	else{
+		newnode->link=pre->link;
+		pre->link=newnode;
+	}
+}
+
+
+
+
 void PrintListNode(nodehead*CL){
 		nodelist* printnode;
 		int index=1;
@@ -80,7 +99,35 @@ void PrintListNode(nodehead*CL){
 
 }
 
+void FreeSelrctNode(nodehead*CL,char*_indata){
+	nodelist* old;
+	nodelist* pre;
+	old=(nodelist*)malloc(sizeof(nodelist));
+	pre=(nodelist*)malloc(sizeof(nodelist));
 
+	if(CL->head==NULL){
+		printf("ERR");
+		return;
+	}
+
+	old=CL->head;
+	pre=CL->head;
+
+	strcpy(old->data,_indata);
+
+	while(old->data!=_indata){
+		old=old->link;
+	}
+	if(old->data==_indata){
+		while(pre->link!=old){
+			pre=pre->link;
+		}
+		pre->link=old->link;
+		free(old);
+	}
+
+	
+}
 
 
 

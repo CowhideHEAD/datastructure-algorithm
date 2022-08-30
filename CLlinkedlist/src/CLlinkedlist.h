@@ -21,3 +21,4 @@ void InsertFirstNode (nodehead*CL,char * _indata);
 void PrintListNode(nodehead*CL);
 
 
+void InsertMiddleNode(nodehead* CL,nodelist*pre ,char *_indata);
